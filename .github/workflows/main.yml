@@ -1,1 +1,22 @@
+name: Yousef Ayman Abdelaziz Shehab 
 
+on:
+
+  push:
+
+    branches:
+
+      - master  
+ 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Before'
+        run: ls
+
+      - uses: actions/checkout@v3
+
+      - name: 'After'
+        run: ls
